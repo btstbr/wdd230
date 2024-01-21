@@ -50,6 +50,7 @@ nav {
 
 main {
     padding: 20px;
+    list-style-type: none;
 }
 
 .card {
