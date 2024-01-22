@@ -1,10 +1,8 @@
+/* Contents of normalize.css (Copy the content from the Normalize.css file here) */
+/* ... */
+
 /* Custom CSS normalization for course home page */
 /* Add your custom reset styles here */
-
-/* Larger.css with media query */
-@media (min-width: 769px) {
-    /* Add larger screen styles here */
-}
 
 body,
 h1,
@@ -24,7 +22,6 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    /* Ensure the body takes at least the full viewport height */
 }
 
 header {
@@ -49,7 +46,6 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* Center the nav horizontally */
 }
 
 .nav-link {
@@ -86,7 +82,6 @@ footer {
     padding: 10px;
     width: 100%;
     margin-top: auto;
-    /* Push the footer to the bottom */
 }
 
 .copyright_text {
@@ -118,7 +113,6 @@ footer {
     }
 
     main {
-        /* Display main sections in a single column for mobile view */
         column-count: 1;
     }
 }
@@ -135,9 +129,7 @@ footer {
 
     nav {
         flex-direction: row;
-        /* Display navigation links horizontally */
         justify-content: center;
-        /* Center the nav horizontally */
     }
 
     .nav-link {
@@ -146,7 +138,6 @@ footer {
     }
 
     main {
-        /* Display main sections in a single column for larger views */
         column-count: 1;
     }
 }
