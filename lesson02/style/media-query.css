@@ -1,0 +1,55 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Header Styles */
+header {
+    max-width: 640px;
+    margin: 1rem auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #3498db;
+    color: #000;
+}
+
+/* Main Styles */
+main {
+    max-width: 640px;
+    margin: 1rem auto;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    background-color: #3498db;
+    color: #000;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+/* Section Styles */
+section {
+    padding: 1rem;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+/* Footer Styles */
+footer {
+    max-width: 640px;
+    margin: 1rem auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #3498db;
+    color: #000;
+}
+
+/* Media Query for responsiveness */
+@media (min-width: 400px) {
+
+    /* Adjust styles for screens with a max-width of 499px */
+    header,
+    main,
+    footer {
+        max-width: 100%;
+    }
+}
