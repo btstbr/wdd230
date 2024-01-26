@@ -8,6 +8,8 @@
     <meta name="author" content="Rafael Batista">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" media="(min-width: 769px)" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+
     <title>Rafael Batista - WDD 230 - Web Frontend Development</title>
     <meta name="description"
         content="WDD 230 - Web Frontend Development - Rafael Batista - My homepage for the Web Frontend Development course.">
@@ -19,10 +21,7 @@
     <meta property="og:description"
         content="WDD 230 - Web Frontend Development - Rafael Batista - My homepage for the Web Frontend Development course.">
     <meta property="article:author" content="Rafael Batista">
-    <link rel="stylesheet" href="styles/base.css">
 </head>
-
-
 
 <body>
 
@@ -45,32 +44,69 @@
 
     <!-- main section start -->
     <main>
-        <h2>WDD 230: Web Frontend Development</h2>
-        <section class="card">
-            <h3>Learning Activities</h3>
+        <h2 class="attribute">WDD 230: Web Frontend Development</h2>
+        <div class="card-grid">
+            <section class="card">
+                <div class="card-header">
+                    <h3>Learning Activities</h3>
+                </div>
+                <div class="card-content">
+                    <ul class="la-card">
+                        <li>Lesson 01: <a href="holygrail.html" target="_blank">Holygrail</a></li>
+                        <li>Lesson 02: <a href="lesson02/design.html" target="_blank">Web Design Principles</a>
+                            |
+                            <a href="lesson02/media-query.html" target="_blank">CSS Media Query</a>
+                            |
+                            <a href="lesson02/design-principles.html" target="_blank">Design Principles
+                                Assignment</a>
+                        </li>
 
-            <!-- Placeholder list items -->
-            <p><a href="holygrail.html" target="_blank">Week 01: Holygrail</a></p>
-            <div class="links-container">
-                <p><a href="lesson02/design.html" target="_blank">Week 02: 1.Web Design Principles</a></p>
-                <p><a href="lesson02/media-query.html" target="_blank">2.CSS Media Query</a></p>
-                <p><a href="lesson02/design-principles.html" target="_blank">3.Design Principles Assignment</a></p>
-            </div>
-            <div class="links-container">
-                <p><a href="lesson03/images/css_combinators.png" target="_blank">Week 03: 1.CSS Combinators</a></p>
-                <p><a href="https://codepen.io/Rafael-Batista-the-bashful/pen/LYazzgj" target="_blank">2.CSS
-                        Pseudo-element</a></p>
-                <p><a href="https://codepen.io/Rafael-Batista-the-bashful/pen/LYazzaO" target="_blank">3.Responsive
-                        Menu</a></p>
-            </div>
-        </section>
+                        <li>Lesson 03: <a href="lesson03/images/css_combinators.png" target="_blank">CSS
+                                Combinators</a>
+                            |
+                            <a href="https://codepen.io/Rafael-Batista-the-bashful/pen/LYazzgj" target="_blank">CSS
+                                Pseudo-element</a>
+                            |
+                            <a href="https://codepen.io/Rafael-Batista-the-bashful/pen/LYazzaO"
+                                target="_blank">Responsive
+                                Menu</a>
+                        </li>
+                        <li>Lesson 05: </li>
+                        <li>Lesson 06: </li>
+                        <li>Lesson 07: </li>
+                        <li>Lesson 08: </li>
+                        <li>Lesson 09: </li>
+                        <li>Lesson 10: </li>
+                        <li>Lesson 11: </li>
+                        <li>Lesson 12: </li>
+                        <li>Lesson 13: </li>
+                        <li>Lesson 14: </li>
+                    </ul>
+                </div>
+            </section>
 
-        <!-- section 2 - information -->
-        <section class="card">
-            <h3>Information</h3>
-            <p>Weather: Sunny</p>
-            <p>Number of visits: #</p>
-        </section>
+            <!-- section 2 - information -->
+            <section class="card">
+                <div class="card-header">
+                    <h3>Information</h3>
+                </div>
+                <div class="card-content">
+                    <ul class="la-card">
+                        <div>Weather: Sunny</div>
+                        <div>Number of visits: #</div>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- section 3 - map -->
+            <!-- ... (seu HTML existente) ... -->
+
+            <!-- section 3 - map -->
+            <section class="map">
+                <iframe width="100%" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                    src="https://maps.google.com/maps?q=LATITUDE,LONGITUDE&z=12&output=embed"></iframe>
+            </section>
+        </div>
     </main>
 
     <!-- footer section start -->

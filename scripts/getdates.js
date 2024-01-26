@@ -13,3 +13,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const lastModifiedDate = document.lastModified;
     lastModifiedParagraph.textContent = `Last Modified: ${lastModifiedDate}`;
 });
+
+function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('show');
+}

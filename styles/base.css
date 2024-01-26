@@ -1,9 +1,3 @@
-/* Contents of normalize.css (Copy the content from the Normalize.css file here) */
-/* ... */
-
-/* Custom CSS normalization for course home page */
-/* Add your custom reset styles here */
-
 body,
 h1,
 h2,
@@ -55,24 +49,74 @@ nav {
     text-decoration: none;
 }
 
+
+.nav-link::before {
+    content: '\2022';
+    margin-right: 5px;
+    color: #3498db;
+}
+
+.nav-link::after {
+    content: '|';
+    margin-left: 5px;
+    color: #3498db;
+}
+
+.attribute {
+    padding: 15px;
+    text-align: center;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border: solid 1px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #3498db;
+    border-radius: 10px 10px 0 0;
+    justify-content: center;
+}
+
+h3 {
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    font-weight: bold;
+}
+
 .nav-link:hover {
     background-color: #3498db;
 }
 
 main {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
     padding: 20px;
     list-style-type: none;
 }
 
-.card {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 15px;
-}
-
-.card h3 {
-    color: #333;
+ul {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 20px;
+    padding-inline-end: 20px;
+    list-style-type: none;
 }
 
 footer {
@@ -92,30 +136,6 @@ footer {
     font-size: 12px;
 }
 
-.card {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 15px;
-}
-
-.card h3 {
-    color: #333;
-}
-
-.links-container {
-    display: flex;
-    gap: 10px;
-    /* Espaço entre os links */
-}
-
-.links-container p {
-    margin: 0;
-    /* Remover margem padrão dos parágrafos */
-}
-
-
-/* Media Query for responsiveness */
 @media (max-width: 768px) {
     header img {
         width: 80px;
@@ -136,19 +156,29 @@ footer {
     }
 
     main {
-        column-count: 1;
+        flex-direction: column;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .card {
+        border-radius: 10px;
+    }
+
+    .card-content {
+        padding: 20px;
+        list-style-type: none;
     }
 }
 
 /* Larger screen styles within the media query */
 @media (min-width: 769px) {
-    header img {
-        /* Add larger screen styles for header image here */
-    }
+    header img {}
 
-    h1 {
-        /* Add larger screen styles for h1 here */
-    }
+    h1 {}
 
     nav {
         flex-direction: row;
@@ -162,5 +192,24 @@ footer {
 
     main {
         column-count: 1;
+    }
+}
+
+.map {
+    grid-column: span 3;
+    margin-right: 20px;
+}
+
+.map iframe {
+    width: 100%;
+    height: 450px;
+    border-radius: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .map {
+        width: 100%;
+        grid-column: span 3;
     }
 }
