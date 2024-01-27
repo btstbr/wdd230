@@ -1,0 +1,150 @@
+/* Your CSS styles go here */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #F4F4F4;
+    /* Light gray background color */
+}
+
+header {
+    background-color: #2C3E50;
+    /* Dark blue background color */
+    color: #ECF0F1;
+    /* Light gray text color */
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+nav {
+    background-color: #3498DB;
+    /* Bright blue background color */
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ECF0F1;
+    /* Light gray text color */
+    margin: 0 10px;
+}
+
+main {
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    background-color: #ECF0F1;
+    /* Light gray background color */
+    border-radius: 8px;
+    /* Rounded corners for a softer look */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Subtle box shadow for depth */
+}
+
+table.colors {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table.colors th,
+table.colors td {
+    border: 1px solid #BDC3C7;
+    /* Light gray border color */
+    padding: 10px;
+}
+
+th.gray {
+    background-color: #34495e;
+    /* Darker gray background color for th.gray */
+    color: #ECF0F1;
+    /* Light gray text color for th.gray */
+}
+
+td.primary {
+    background-color: #2c3e50;
+    color: #fff;
+}
+
+td.secondary {
+    background-color: #3498db;
+    color: #fff;
+}
+
+td.accent1 {
+    background-color: #ecf0f1;
+    color: #333;
+}
+
+td.accent2 {
+    background-color: #bdc3c7;
+    color: #333;
+}
+
+td.accent3 {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.sitemap {
+    display: grid;
+    justify-content: center;
+
+    grid-template-columns: repeat(6, 15%);
+    grid-template-rows: 3em 1.5em 1.5em 3em;
+    grid-template-areas: ". . home home . ."
+        ". . . top . ."
+        ". left left right right ."
+        "page2 page2 . . page3 page3";
+}
+
+.sitemap>div {
+
+    text-align: center;
+
+}
+
+.sm-home {
+    grid-area: home;
+    background-color: #ccc;
+    line-height: 3em;
+}
+
+.sm-page2 {
+    grid-area: page2;
+    background-color: #ccc;
+    line-height: 3em;
+}
+
+.sm-page3 {
+    grid-area: page3;
+    background-color: #ccc;
+    line-height: 3em;
+}
+
+.top {
+    grid-area: top;
+    border-left: 1px solid;
+}
+
+.left {
+    grid-area: left;
+    border-top: 1px solid;
+    border-left: 1px solid;
+}
+
+.right {
+    grid-area: right;
+    border-top: 1px solid;
+    border-right: 1px solid;
+}
