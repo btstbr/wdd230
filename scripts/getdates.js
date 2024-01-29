@@ -14,7 +14,9 @@ document.addEventListener("DOMContentLoaded", function () {
     lastModifiedParagraph.textContent = `Last Modified: ${lastModifiedDate}`;
 });
 
-function toggleMenu() {
-    const navLinks = document.querySelector('.nav-links');
-    navLinks.classList.toggle('show');
+function toggleNav() {
+    var nav = document.querySelector('nav');
+    nav.classList.toggle('show');
 }
+
+
