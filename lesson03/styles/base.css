@@ -50,6 +50,12 @@ main {
     /* Rounded corners for a softer look */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     /* Subtle box shadow for depth */
+
+    /* Adiciona a seguinte regra para centralizar o conteúdo dentro de main */
+    text-align: center;
+
+    /* Adiciona margem inferior para espaçamento entre as seções */
+    margin-bottom: 20px;
 }
 
 table.colors {
@@ -147,4 +153,16 @@ td.accent3 {
     grid-area: right;
     border-top: 1px solid;
     border-right: 1px solid;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+p.colored {
+    background-color: #3498DB;
+    color: #ECF0F1;
 }
