@@ -17,6 +17,19 @@ document.addEventListener("DOMContentLoaded", function () {
 function toggleNav() {
     var nav = document.querySelector('nav');
     nav.classList.toggle('show');
+
+    // Adicione a lógica para alternar entre os ícones
+    var iconOpen = document.querySelector('.icon-open');
+    var iconClose = document.querySelector('.icon-close');
+
+    if (nav.classList.contains('show')) {
+        iconOpen.style.display = 'none';
+        iconClose.style.display = 'block';
+    } else {
+        iconOpen.style.display = 'block';
+        iconClose.style.display = 'none';
+    }
 }
+
 
 
