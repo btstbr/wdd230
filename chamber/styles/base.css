@@ -189,44 +189,32 @@ ul {
 /* Estilizando a hero image e o texto acima do botão */
 .hero_img {
     position: relative;
-    /* Define a posição como relativa para permitir o posicionamento absoluto dos elementos internos */
+    text-align: center;
     margin-bottom: 20px;
 }
 
 .hero_img img {
     width: 100%;
-    /* Garante que a imagem da hero ocupe 100% da largura do contêiner pai */
     height: auto;
-    /* Mantém a proporção da imagem */
 }
 
 .hero_img h1 {
     position: absolute;
-    /* Define a posição absoluta para sobrepor o texto na imagem */
+    font-size: 2em;
     top: 50%;
-    /* Posiciona o texto verticalmente no meio da imagem */
     left: 50%;
-    /* Posiciona o texto horizontalmente no meio da imagem */
     transform: translate(-50%, -50%);
-    /* Centraliza o texto completamente */
     color: #fff;
-    /* Adiciona uma cor ao texto (pode ajustar conforme necessário) */
 }
 
 /* Estilizando o contêiner do botão */
 .button {
     position: absolute;
-    /* Define a posição absoluta para sobrepor o botão na imagem */
     top: 80%;
-    /* Ajuste a posição vertical do botão conforme necessário (espaço abaixo) */
     left: 50%;
-    /* Posiciona o botão horizontalmente no meio da imagem */
     transform: translateX(-50%);
-    /* Centraliza o botão horizontalmente */
     margin-top: 20px;
-    /* Adiciona espaço acima do botão (pode ajustar conforme necessário) */
     margin-bottom: 20px;
-    /* Adiciona espaço abaixo do botão (pode ajustar conforme necessário) */
 }
 
 /* Estilizando o link dentro do botão */
@@ -245,30 +233,20 @@ ul {
     background-color: #3498db;
 }
 
-
-
-
 /* Estilizando a seção de eventos */
 .events {
     display: flex;
     flex-wrap: wrap;
-    /* Garante que os eventos quebrem para a próxima linha, se necessário */
     justify-content: space-around;
-    /* Distribui os elementos igualmente na horizontal */
     text-align: center;
-    /* Centraliza o texto dentro da seção */
 }
 
 /* Estilizando cada evento dentro da seção */
 .event {
     flex: 1;
-    /* Faz com que cada evento ocupe uma proporção igual do espaço disponível */
     margin: 0 10px;
-    /* Adiciona uma margem para separar os eventos (opcional) */
     border: 1px solid #ccc;
-    /* Adiciona uma borda para visualização */
     padding: 10px;
-    /* Adiciona espaçamento interno para melhorar a aparência (opcional) */
     border-radius: 10px;
 }
 
@@ -511,5 +489,12 @@ footer {
     .event {
         width: 100%;
         /* Uma coluna em telas muito pequenas */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero_img h1 {
+        font-size: 1.5em;
+        /* Ajusta o tamanho da fonte para telas menores */
     }
 }
