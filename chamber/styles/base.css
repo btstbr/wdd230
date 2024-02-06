@@ -377,6 +377,10 @@ footer {
     font-size: 12px;
 }
 
+.course {
+    font-size: 12px;
+}
+
 
 /* Mobile Styles */
 @media (max-width: 768px) {
