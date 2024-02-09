@@ -31,5 +31,24 @@ function toggleNav() {
     }
 }
 
+function toggleDarkMode() {
+    const body = document.body;
+    body.classList.toggle("dark-mode");
+
+    // Salva o estado do modo escuro no armazenamento local
+    const isDarkMode = body.classList.contains("dark-mode");
+    localStorage.setItem("darkMode", isDarkMode);
+}
+
+// Verifica se o modo escuro estava ativado anteriormente
+const savedDarkMode = localStorage.getItem("darkMode");
+if (savedDarkMode === "true") {
+    document.body.classList.add("dark-mode");
+}
+
+
+
+
+
 
 

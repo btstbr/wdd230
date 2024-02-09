@@ -108,6 +108,35 @@ nav {
     display: none;
 }
 
+body {
+    transition: background-color 0.5s ease;
+
+}
+
+.dark-mode {
+    background-color: #222;
+    color: #fff;
+}
+
+.container {
+    text-align: center;
+}
+
+#toggle-btn {
+    font-size: 1.5em;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+.caption {
+    display: block;
+    margin-top: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
 
 .nav-link {
     display: inline-block;
@@ -188,14 +217,15 @@ ul {
 
 /* Estilizando a hero image e o texto acima do botão */
 .hero_img {
-    position: relative;
+
     text-align: center;
-    margin-bottom: 20px;
+
 }
 
 .hero_img img {
     width: 100%;
     height: auto;
+    max-width: 1500px;
 }
 
 .hero_img h1 {
@@ -302,7 +332,7 @@ ul {
     /* Distribui os elementos igualmente na horizontal */
     padding: 20px 0;
     /* Adiciona espaçamento acima e abaixo da seção (pode ajustar conforme necessário) */
-    background-color: #f0f0f0;
+
     /* Adiciona uma cor de fundo (opcional) */
 }
 
@@ -321,8 +351,6 @@ ul {
     /* Faz com que cada card ocupe uma proporção igual do espaço disponível */
     margin: 0 10px;
     /* Adiciona uma margem para separar os cards (pode ajustar conforme necessário) */
-    background-color: #fff;
-    /* Adiciona uma cor de fundo para os cards (opcional) */
     padding: 20px;
     /* Adiciona espaçamento interno para melhorar a aparência (pode ajustar conforme necessário) */
 }
@@ -501,4 +529,6 @@ footer {
         font-size: 1.5em;
         /* Ajusta o tamanho da fonte para telas menores */
     }
+
+
 }

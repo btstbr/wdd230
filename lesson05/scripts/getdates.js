@@ -32,14 +32,6 @@ function addBookOfMormon() {
     }
 }
 
-// capitalize first letter of input value
-function capitalizeFirstLetter(string) {
-    //input string is converted to lowercase first
-    string = string.toLowerCase();
-    // Capitalize the first letter and concatenate it with the rest of the string
-    return string.charAt(0).toUpperCase() + string.slice(1);
-}
-
 function capitalizeWords(string) {
     // Split the string by whitespace characters
     const words = string.split(/\s+/);
