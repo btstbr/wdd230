@@ -142,7 +142,11 @@ main {
     position: absolute;
     top: 30px;
     left: 30px;
+    background: radial-gradient(#fff, #6596c5);
+    border: 1px solid rgb(64, 103, 139);
     padding: .8rem;
+    box-shadow: 0 0 3rem #fff;
+    opacity: 0.65;
     white-space: nowrap;
 }
 
