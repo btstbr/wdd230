@@ -34,6 +34,7 @@ header img {
 
 h1 {
     margin-top: 10px;
+    color: #555;
 }
 
 nav {
@@ -60,7 +61,6 @@ nav {
 .icon-close {
     display: none;
 }
-
 
 .nav-link {
     display: inline-block;
@@ -114,6 +114,7 @@ h3 {
     margin-block-start: 1em;
     margin-block-end: 1em;
     font-weight: bold;
+    color: #555;
 }
 
 .nav-link:hover {
@@ -130,7 +131,6 @@ main {
 
 .hero {
     position: relative;
-
 }
 
 .hero img {
