@@ -119,6 +119,7 @@ h3 {
 
 .nav-link:hover {
     background-color: #3498db;
+    color: #fff;
 }
 
 main {
