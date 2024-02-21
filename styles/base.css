@@ -76,7 +76,6 @@ nav {
 }
 
 .nav-link::after {
-    content: '|';
     margin-left: 5px;
     color: #3498db;
 }
