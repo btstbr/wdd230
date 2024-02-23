@@ -31,5 +31,23 @@ function toggleNav() {
     }
 }
 
+// ********* Page Visits Counter *********
+
+let numVisits = Number(window.localStorage.getItem("numVisitsCounter")) || 0;
+const visitsDisplay = document.querySelector(".visits");
+
+// Determine if this is the first visit or display the number of visits.
+if (numVisits === 0) {
+    visitsDisplay.textContent = `Welcome! This is your first visit.`;
+} else {
+    visitsDisplay.textContent = numVisits;
+}
+
+// visit counter increment
+numVisits++;
+
+// store the new visit count total into localStorage
+localStorage.setItem("numVisitsCounter", numVisits);
+
 
 
