@@ -8,3 +8,35 @@
         grid-template-columns: repeat(4, 1fr);
     }
 }
+
+.sidebar {
+    grid-template-columns: 0.8fr 1.8fr;
+    grid-template-areas:
+        "left right";
+}
+
+.galleryImage:hover img {
+    transform: scale(1.1);
+}
+
+.blocks {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: auto;
+    padding: 10px;
+}
+
+.hiddenForm {
+    display: block;
+}
+
+
+@media screen and (min-width: 1039px) and (max-width: 1371px) {
+
+    /* make neat rows on medium sizes */
+    .hiddenForm {
+        display: none;
+    }
+
+
+}

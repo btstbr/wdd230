@@ -46,6 +46,40 @@ if (savedDarkMode === "true") {
     document.body.classList.add("dark-mode");
 }
 
+// Função para calcular a diferença de dias entre duas datas
+function getDaysDifference(currentDate, lastVisitDate) {
+    const oneDay = 24 * 60 * 60 * 1000; // horas * minutos * segundos * milissegundos
+    const diffDays = Math.round(Math.abs((currentDate - lastVisitDate) / oneDay));
+    return diffDays;
+}
+
+// Função principal para exibir a mensagem com base na diferença de dias
+function displayMessage() {
+    const sidebarContent = document.getElementById('sidebar-content');
+    const currentDate = new Date();
+    const lastVisitDate = localStorage.getItem('lastVisitDate');
+
+    if (!lastVisitDate) {
+        sidebarContent.innerText = "Welcome! Let us know if you have any questions.";
+    } else {
+        const daysDifference = getDaysDifference(currentDate, new Date(lastVisitDate));
+
+        if (daysDifference < 1) {
+            sidebarContent.innerText = "Back so soon! Awesome!";
+        } else {
+            const daysText = daysDifference === 1 ? "day" : "days";
+            sidebarContent.innerText = `You last visited ${daysDifference} ${daysText} ago.`;
+        }
+    }
+
+    // Atualiza a data da última visita no localStorage
+    localStorage.setItem('lastVisitDate', currentDate.toISOString());
+}
+
+// Chama a função ao carregar a página
+document.addEventListener('DOMContentLoaded', displayMessage);
+
+
 
 
 

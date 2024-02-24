@@ -37,7 +37,7 @@ let numVisits = Number(window.localStorage.getItem("numVisitsCounter")) || 0;
 const visitsDisplay = document.querySelector(".visits");
 
 
-if (numVisits === 0) {
+if (numVisits === +1) {
     visitsDisplay.textContent = `Welcome! This is your first visit.`;
 } else {
     visitsDisplay.textContent = numVisits;
