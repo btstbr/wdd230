@@ -382,6 +382,8 @@ ul {
     /* Adiciona uma margem para separar os cards (pode ajustar conforme necessário) */
     padding: 20px;
     /* Adiciona espaçamento interno para melhorar a aparência (pode ajustar conforme necessário) */
+    text-align: center;
+    /* Espaçamento */
 }
 
 /* Estilizando o conteúdo dentro de cada card */
@@ -524,6 +526,7 @@ footer {
     main {
         column-count: 1;
     }
+
 }
 
 .map {
@@ -539,25 +542,23 @@ footer {
 
 /* Media Query para telas menores */
 @media screen and (max-width: 768px) {
-    .event {
-        width: calc(50% - 20px);
-        /* Duas colunas em telas menores */
+    .events {
+        flex-direction: column;
     }
-}
 
-/* Media Query para telas ainda menores */
-@media screen and (max-width: 480px) {
-    .event {
-        width: 100%;
-        /* Uma coluna em telas muito pequenas */
+    .cards {
+        flex-direction: column;
     }
-}
 
-@media screen and (max-width: 768px) {
+    .event {
+        margin: 10px;
+    }
+
+    .card {
+        margin: 10px;
+    }
+
     .hero_img h1 {
         font-size: 1.5em;
-        /* Ajusta o tamanho da fonte para telas menores */
     }
-
-
 }
