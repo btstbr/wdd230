@@ -2,84 +2,125 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <!-- This start file was build by Paul Cheney  -->
-    <title>HTML5 Start Site by Paul Cheney</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Rafael Batista">
-    <meta name="description" content="Fill Me In">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" media="(min-width: 769px)" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
 
-    <link href="lesson08/styles/normalize.css" rel="stylesheet">
-    <link href="lesson08/styles/base.css" rel="stylesheet">
-    <link href="lesson08/styles/larger.css" rel="stylesheet">
+    <title>Rafael Batista - WDD 230 - Web Frontend Development</title>
+    <meta name="description"
+        content="WDD 230 - Web Frontend Development - Rafael Batista - My homepage for the Web Frontend Development course.">
+    <meta property="og:title" content="Rafael Batista - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010125.jpg?w=996&t=st=1705374023~exp=1705374623~hmac=a45e582e9900fdd60141c718a3594f883f23965196df2867c282295845407406">
+    <meta property="og:url" content="https://btstbr.github.io/wdd230/">
+    <meta property="og:description"
+        content="WDD 230 - Web Frontend Development - Rafael Batista - My homepage for the Web Frontend Development course.">
+    <meta property="article:author" content="Rafael Batista">
 </head>
 
 <body>
+
+    <!-- header section start -->
     <header>
-        <h1>Course Proposal</h1>
-        <form method="get" action="lesson08/thanks.html">
-            <fieldset>
-                <legend>Applicant Information</legend>
-                <label class="top">First Name* <input type="text" name="fname" required></label>
-                <label class="top">Last Name* <input type="text" name="lname" required></label>
-                <label class="top">Phone <input type="tel" name="phone" placeholder="1235551234"></label>
-                <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com"
-                        required></label>
-                <label class="top">Website <input type="url" name="url" placeholder="http://"></label>
-            </fieldset>
-            <fieldset>
-                <legend>Course Information</legend>
-                <div>Audience</div>
-                <label class="sbs"><input type="radio" name="audience" value="beginner"> Beginner</label>
-                <label class="sbs"><input type="radio" name="audience" value="intermediate"> Intermediate</label>
-                <label class="sbs"><input type="radio" name="audience" value="advanced"> Advanced</label>
-
-                <div>Software Needed</div>
-                <label class="sbs"><input type="checkbox" name="editing" value="yes"> Photo Editing</label>
-                <label class="sbs"><input type="checkbox" name="code" value="yes"> Coding</label>
-                <label class="sbs"><input type="checkbox" name="process" value="yes"> Preprocessor</label>
-                <label class="sbs"><input type="checkbox" name="client" value="yes"> FTP Client</label>
-            </fieldset>
-
-            <fieldset>
-                <legend>Funding</legend>
-                <label class="top">Anticipated Completion Date<input type="date" name="completeDate"></label>
-                <label class="top">Course Subject<select name="subject">
-                        <option value="none">Please Select &#9662;</option>
-                        <option value="web">Web Development</option>
-                        <option value="software">Software Development</option>
-                        <option value="design">Web Design</option>
-                        <option value="business">Business</option>
-                        <option value="html">Html</option>
-                        <option value="css">CSS</option>
-                        <option value="js">JavaScript</option>
-                        <option value="php">PHP</option>
-                        <option value="mysql">MySQL</option>
-                        <option value="ruby">Ruby</option>
-                    </select>
-                </label>
-                <label class="top">How Many Authors<input type="number" name="authors"></label>
-            </fieldset>
-            <input class="submitBtn" type="submit" value="Propose My Course">
-        </form>
-        <h2>Designing Web Forms</h2>
+        <img src="images/foto-rosto.webp" alt="Photo of the author's face">
+        <h1>Rafael Batista</h1>
     </header>
 
-    <nav class="clearfix">
-        <ul>
-            <li><a href="#">About</a></li>
-            <li class="active"><a href="#">Propose</a></li>
-            <li><a href="#">Winners</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+    <!-- nav section start -->
+    <div class="menu-icon" onclick="toggleNav()">
+        <div class="icon-open">&#9776;</div>
+        <div class="icon-close">&#10006;</div>
+    </div>
+
+    <nav>
+        <p><a class="nav-link" href="index.html">Home</a></p>
+        <p><a class="nav-link" href="lesson03/chamber-site-plan.html" target="_blank">Site Plan</a></p>
+        <p><a class="nav-link" href="chamber/index.html">Chamber</a></p>
+        <p><a class="nav-link" href="https://www.byui.edu/" target="_blank">BYU-Idaho</a></p>
+        <p><a class="nav-link"
+                href="https://www.churchofjesuschrist.org/study/scriptures/bofm/mosiah/3?lang=eng&id=p7-p9#p7"
+                target="_blank">Scripture</a></p>
     </nav>
 
+    <!-- main section start -->
     <main>
-        <h1>Course Proposal Application</h1>
+        <header>
+            <h1>Course Proposal</h1>
+            <form method="get" action="lesson08/thanks.html">
+                <fieldset>
+                    <legend>Applicant Information</legend>
+                    <label class="top">First Name* <input type="text" name="fname" required></label>
+                    <label class="top">Last Name* <input type="text" name="lname" required></label>
+                    <label class="top">Phone <input type="tel" name="phone" placeholder="1235551234"></label>
+                    <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com"
+                            required></label>
+                    <label class="top">Website <input type="url" name="url" placeholder="http://"></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Course Information</legend>
+                    <div>Audience</div>
+                    <label class="sbs"><input type="radio" name="audience" value="beginner"> Beginner</label>
+                    <label class="sbs"><input type="radio" name="audience" value="intermediate"> Intermediate</label>
+                    <label class="sbs"><input type="radio" name="audience" value="advanced"> Advanced</label>
+
+                    <div>Software Needed</div>
+                    <label class="sbs"><input type="checkbox" name="editing" value="yes"> Photo Editing</label>
+                    <label class="sbs"><input type="checkbox" name="code" value="yes"> Coding</label>
+                    <label class="sbs"><input type="checkbox" name="process" value="yes"> Preprocessor</label>
+                    <label class="sbs"><input type="checkbox" name="client" value="yes"> FTP Client</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Funding</legend>
+                    <label class="top">Anticipated Completion Date<input type="date" name="completeDate"></label>
+                    <label class="top">Course Subject<select name="subject">
+                            <option value="none">Please Select &#9662;</option>
+                            <option value="web">Web Development</option>
+                            <option value="software">Software Development</option>
+                            <option value="design">Web Design</option>
+                            <option value="business">Business</option>
+                            <option value="html">Html</option>
+                            <option value="css">CSS</option>
+                            <option value="js">JavaScript</option>
+                            <option value="php">PHP</option>
+                            <option value="mysql">MySQL</option>
+                            <option value="ruby">Ruby</option>
+                        </select>
+                    </label>
+                    <label class="top">How Many Authors<input type="number" name="authors"></label>
+                </fieldset>
+                <input class="submitBtn" type="submit" value="Propose My Course">
+            </form>
+            <h2>Designing Web Forms</h2>
+        </header>
+
+        <nav class="clearfix">
+            <ul>
+                <li><a href="#">About</a></li>
+                <li class="active"><a href="#">Propose</a></li>
+                <li><a href="#">Winners</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h1>Course Proposal Application</h1>
+        </main>
+
     </main>
 
-    <footer>&copy; &bull; Paul Cheney &bull; 123-555-6789</footer>
-    <script src="scripts/scripts.js"></script>
+    <!-- footer section -->
+    <footer>
+        <p class="copyright_text">© Your Name, Your State/Country</p>
+        <p class="last_modified">Last Modified: #</p>
+        <script src="scripts/getdates.js"></script>
+    </footer>
+
 </body>
 
 </html>
