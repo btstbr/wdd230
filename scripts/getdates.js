@@ -49,5 +49,23 @@ numVisits++;
 
 localStorage.setItem("numVisitsCounter", numVisits);
 
+function checkPasswordMatch() {
+    const password = document.getElementById('password').value;
+    const confirmPassword = document.getElementById('confirmPassword').value;
+    const message = document.getElementById('passwordMatchMessage');
+
+    if (password !== confirmPassword) {
+        message.innerHTML = 'Passwords do not match';
+    } else {
+        message.innerHTML = '';
+    }
+}
+
+function updateRatingValue() {
+    const ratingValue = document.getElementById('ratingValue');
+    const pageRating = document.getElementById('pageRating');
+    ratingValue.innerHTML = pageRating.value;
+}
+
 
 
