@@ -49,6 +49,7 @@ numVisits++;
 
 localStorage.setItem("numVisitsCounter", numVisits);
 
+// seuScript.js
 function checkPasswordMatch() {
     const password = document.getElementById('password').value;
     const confirmPassword = document.getElementById('confirmPassword').value;
@@ -56,8 +57,10 @@ function checkPasswordMatch() {
 
     if (password !== confirmPassword) {
         message.innerHTML = 'Passwords do not match';
+        return false;
     } else {
         message.innerHTML = '';
+        return true;
     }
 }
 
