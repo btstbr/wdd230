@@ -769,6 +769,7 @@ form {
     gap: 0.5px;
     /* Espaço entre as colunas */
 
+
     /* Responsivo: Reduz para 2 colunas em telas menores */
     @media (max-width: 768px) {
         grid-template-columns: repeat(2, 1fr);
@@ -778,4 +779,5 @@ form {
     @media (max-width: 600px) {
         grid-template-columns: 1fr;
     }
+
 }
