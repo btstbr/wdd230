@@ -79,6 +79,14 @@ function displayMessage() {
 // Chama a função ao carregar a página
 document.addEventListener('DOMContentLoaded', displayMessage);
 
+function setDateTime() {
+    // Obtenha a referência do campo datetime
+    var datetimeField = document.getElementById('datetime');
+
+    // Defina o valor do campo com a data e hora atuais em milissegundos
+    datetimeField.value = Date.now();
+}
+
 
 
 
