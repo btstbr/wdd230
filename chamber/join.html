@@ -9,9 +9,10 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" media="(min-width: 769px)" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
 
-    <title>Salt Lake City Chamber of Commerce</title>
-    <meta name="description" content="Salt Lake City Chamber of Commerce Website">
+    <title>Salt Lake City Chamber of Commerce - Join</title>
+    <meta name="description" content="Salt Lake City Chamber of Commerce - Join">
     <meta property="og:title" content="Salt Lake City Chamber of Commerce - Join">
     <meta property="og:type" content="website">
     <meta property="og:image"
@@ -49,21 +50,20 @@
     <main>
         <h4>Join the Chamber</h4>
         <form action="thankyou.html" method="get">
-            <!-- action had to be a php file because the form was not working due to NginX not being able to handle the form data. -->
             <div class="blocks">
                 <fieldset>
                     <legend>Applicant Information</legend>
                     <label>First Name* <input type="text" name="fname" required></label>
                     <label>Last Name* <input type="text" name="lname" required></label>
                     <label>Title <input type="text" name="title" pattern="[A-Za-z0-9\s-]{7,}"></label>
-                    <label>Email* <input type="email" name="email" required placeholder="someone@byui.edu"></label>
+                    <label>Email* <input type="email" name="email" required placeholder="someone@example.com"></label>
                     <label>Phone* <input type="tel" name="phone" placeholder="1234567890" required></label>
                 </fieldset>
                 <fieldset>
                     <legend>Business Information</legend>
                     <label>Business Name <input type="text" name="businessName"></label>
-                    <label>Business Description</label>
-                    <textarea name="business" placeholder="Business Description"></textarea>
+                    <label for="businessDescription">Business Description</label>
+                    <textarea id="businessDescription" name="business" placeholder="Business Description"></textarea>
                     <input type="hidden" name="datetime" id="datetime" value="">
                 </fieldset>
                 <fieldset>
@@ -71,46 +71,40 @@
                     <label>
                         <input type="radio" name="audience" value="np">
                         <span>NP Membership ( FREE )</span>
-                        <class="label">For Non-Profit organizations
+                        <span class="label">For Non-Profit organizations</span>
                     </label>
                     <label>
                         <input type="radio" name="audience" value="br" checked>
-                        <span>Bronze Membership ($60/yr)</span>
-                        <class="label">For Small Businesses
+                        <span>Bronze Membership ($50/yr)</span>
+                        <span class="label">For Small Businesses</span>
                     </label>
                     <label>
                         <input type="radio" name="audience" value="si">
-                        <span>Silver Membership ($110/yr)</span>
-                        <class="label">For Medium Businesses
+                        <span>Silver Membership ($100/yr)</span>
+                        <span class="label">For Medium Businesses</span>
                     </label>
                     <label>
                         <input type="radio" name="audience" value="go">
-                        <span>Gold Membership ($220/yr)</span>
-                        <class="label">For Large Businesses
+                        <span>Gold Membership ($200/yr)</span>
+                        <span class="label">For Large Businesses</span>
                     </label>
                 </fieldset>
-                <fieldset class="hiddenForm">
+                <fieldset>
                     <legend>Membership Pricing</legend>
-                    <class="title">NP (Non-Profit) Membership
-                        <p>NP Membership includes all the benefits of a Bronze Membership, but is free for Non-Profit
-                            organizations.</p>
-                        <class="title">Bronze Membership
-                            <p>Bronze Membership includes an invitation to all Chamber events, a listing on the Chamber
-                                website,
-                                and a listing in the Chamber newsletter.</p>
-                            <class="title">Silver Membership
-                                <p>Silver Membership includes all the benefits of a Bronze Membership, plus a 10%
-                                    discount on all
-                                    Chamber events.</p>
-                                <class="title">Gold Membership
-                                    <p>Gold Membership includes all the benefits of a Silver Membership, plus a 20%
-                                        discount on all
-                                        Chamber events.</p>
+                    <p class="title">NP (Non-Profit) Membership</p>
+                    <p>NP Membership includes all the benefits of a Bronze Membership, but is free for Non-Profit
+                        organizations.</p>
+                    <p class="title">Bronze Membership</p>
+                    <p>Bronze Membership includes an invitation to all Chamber events, a listing on the Chamber website,
+                        and a listing in the Chamber newsletter.</p>
+                    <p class="title">Silver Membership</p>
+                    <p>Silver Membership includes all the benefits of a Bronze Membership, plus a 10% discount on all
+                        Chamber events.</p>
+                    <p class="title">Gold Membership</p>
+                    <p>Gold Membership includes all the benefits of a Silver Membership, plus a 20% discount on all
+                        Chamber events.</p>
                 </fieldset>
             </div>
-
-            <!-- Campo oculto para armazenar a data e hora em milissegundos -->
-            <input type="hidden" name="datetime" id="datetime" value="">
 
             <div class="buttonframe">
                 <input type="submit" value="Join" onclick="setDateTime()">

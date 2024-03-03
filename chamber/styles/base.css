@@ -726,13 +726,13 @@ form {
     margin-top: 0em;
 }
 
-.hiddenForm {
+.title {
     display: block;
 }
 
-.hiddenForm .title {
+.title {
     font-size: 1.2em;
-    font-weight: 700;
+    font-weight: bold;
     margin: 0;
     text-align: center;
 }
@@ -748,6 +748,7 @@ form {
 }
 
 .label {
+    display: block;
     padding-left: 20px;
     margin-top: 3px;
     font-style: italic;
@@ -755,6 +756,7 @@ form {
     font-weight: 400;
     width: 100%;
 }
+
 
 .thanks-container {
     height: 50vh;
@@ -767,17 +769,16 @@ form {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 0.5px;
-    /* Espaço entre as colunas */
+}
 
-
-    /* Responsivo: Reduz para 2 colunas em telas menores */
-    @media (max-width: 768px) {
+@media screen and (max-width: 768px) {
+    .blocks {
         grid-template-columns: repeat(2, 1fr);
     }
+}
 
-    /* Responsivo: Reduz para 1 coluna em telas ainda menores */
-    @media (max-width: 600px) {
+@media screen and (max-width: 568px) {
+    .blocks {
         grid-template-columns: 1fr;
     }
-
 }

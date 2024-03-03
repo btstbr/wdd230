@@ -21,22 +21,18 @@
 
 .blocks {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-template-rows: auto;
-    padding: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5px;
 }
 
-.hiddenForm {
-    display: block;
-}
-
-
-@media screen and (min-width: 1039px) and (max-width: 1371px) {
-
-    /* make neat rows on medium sizes */
-    .hiddenForm {
-        display: none;
+@media screen and (max-width: 768px) {
+    .blocks {
+        grid-template-columns: repeat(2, 1fr);
     }
+}
 
-
+@media screen and (max-width: 568px) {
+    .blocks {
+        grid-template-columns: 1fr;
+    }
 }
