@@ -374,3 +374,31 @@ main {
     padding: 0 2%;
     min-height: 20rem;
 }
+
+/*----------- APRESENTAÇÃO --------------*/
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    margin: 0;
+    /* Remova as margens padrão do contêiner */
+}
+
+.container img {
+    width: 50%;
+    height: auto;
+    margin: 0;
+    /* Remova as margens padrão da imagem */
+    border: 1px solid #000;
+}
+
+h5 {
+    margin-top: 5px;
+    color: #333;
+
+    font-size: 18px;
+    /* Ajuste o tamanho da fonte conforme necessário */
+    font-weight: normal;
+    /* Remove o negrito */
+}

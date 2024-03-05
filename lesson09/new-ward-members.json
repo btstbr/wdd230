@@ -1,0 +1,32 @@
+{
+    "wardInfo": [
+        {
+            "familyName": "Batista",
+            "moveInDate": "2022-12-01",
+            "numberOfPeople": 4,
+            "visitedByBishopric": false,
+            "familyMembers": [
+                {
+                    "name": "Rafael da Silva Batista Tolli",
+                    "gender": "Male",
+                    "birthdate": "1981-10-16"
+                },
+                {
+                    "name": "Roberta de Almeida Tolli Batista",
+                    "gender": "Female",
+                    "birthdate": "1982-02-03"
+                },
+                {
+                    "name": "Rafaela Tolli de Camargo Batista",
+                    "gender": "Female",
+                    "birthdate": "2002-05-23"
+                },
+                {
+                    "name": "Gabriel Tolli Batista",
+                    "gender": "Male",
+                    "birthdate": "2010-05-24"
+                }
+            ]
+        }
+    ]
+}
