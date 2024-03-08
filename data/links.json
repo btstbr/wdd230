@@ -4,8 +4,8 @@
             "lesson": "01",
             "links": [
                 {
-                    "url": "https://codepen.io/vwolfley/pen/wvOzbYy",
-                    "title": "Applied JavaScript"
+                    "url": "holygrail.html",
+                    "title": "Holygrail"
                 }
             ]
         },
@@ -13,15 +13,15 @@
             "lesson": "02",
             "links": [
                 {
-                    "url": "lesson02/design.html",
+                    "url": "lesson02/design-principles.html",
                     "title": "Web Design Principles"
                 },
                 {
-                    "url": "lesson02/media-query.html",
+                    "url": "lesson02/design.html",
                     "title": "CSS Media Queries"
                 },
                 {
-                    "url": "lesson02/design-principles.html",
+                    "url": "lesson02/media-query.html",
                     "title": "Design Principles Assignment"
                 }
             ]
@@ -30,15 +30,15 @@
             "lesson": "03",
             "links": [
                 {
-                    "url": "lesson03/images/combinators-screenshot.png",
+                    "url": "lesson03/images/css_combinators.png",
                     "title": "CSS Combinators"
                 },
                 {
-                    "url": "https://codepen.io/vwolfley/pen/dyrRpoM",
+                    "url": "https://codepen.io/Rafael-Batista-the-bashful/pen/LYazzgj",
                     "title": "CSS Pseudo-elements"
                 },
                 {
-                    "url": "https://codepen.io/vwolfley/pen/wvOezGy",
+                    "url": "https://codepen.io/Rafael-Batista-the-bashful/pen/LYazzaO",
                     "title": "Responsive Menu"
                 }
             ]
@@ -47,7 +47,7 @@
             "lesson": "04",
             "links": [
                 {
-                    "url": "https://codepen.io/vwolfley/pen/qBvpRLx",
+                    "url": "https://codepen.io/Rafael-Batista-the-bashful/pen/oNVqJEd",
                     "title": "CSS Pseudo-Classes"
                 }
             ]
@@ -95,7 +95,7 @@
                     "title": "Table Build"
                 },
                 {
-                    "url": "lesson08/form-start/index.html",
+                    "url": "form.html",
                     "title": "Form Build"
                 }
             ]
