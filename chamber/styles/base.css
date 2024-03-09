@@ -782,3 +782,296 @@ form {
         grid-template-columns: 1fr;
     }
 }
+
+/*----------- FORM Page --------------*/
+
+.form-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 80px;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        "header"
+        "form"
+        "membership";
+    color: var(--text-color-main);
+    margin: 0 20px;
+}
+
+.header {
+    grid-area: header;
+    place-self: center;
+}
+
+.column1 {
+    grid-area: form;
+}
+
+.column2 {
+    grid-area: membership;
+}
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.membership-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 600px;
+}
+
+.membership-cards h2 {
+    text-align: center;
+    margin: 0;
+}
+
+.membership-card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.member-card {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border: solid 1px #999;
+    border-radius: 4px;
+}
+
+.member-card h3 {
+    margin: 0 0 5px 0;
+    padding: 1.2rem;
+}
+
+.member-card div {
+    padding: 0.75rem;
+}
+
+.member-card p {
+    margin: 0;
+}
+
+.member-card ul {
+    margin-top: 0;
+}
+
+.np {
+    background-color: seaGreen;
+    color: var(--text-color-secondary);
+}
+
+.bronze {
+    background-color: #cd7f32;
+    color: var(--text-color-secondary);
+}
+
+.silver {
+    background-color: #c0c0c0;
+    color: var(--text-color-main);
+}
+
+.gold {
+    background-color: #ffd700;
+    color: var(--text-color-main);
+}
+
+form fieldset {
+    margin: 1rem 0;
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    padding: 0.5rem 2%;
+}
+
+form fieldset:last-of-type {
+    margin-bottom: 5px;
+}
+
+form legend {
+    color: var(--primary-color);
+    margin: 0 1rem;
+    padding: 0 0.5rem;
+}
+
+form label.top,
+form div {
+    display: block;
+    padding-top: 1rem;
+    color: var(--accent1-color);
+    font-size: 0.8rem;
+}
+
+form label.top input,
+form label.top textarea,
+form label.top select {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: 0.75rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: var(--text-color-main);
+    width: 100%;
+    max-width: 20rem;
+}
+
+form label.sbs {
+    display: block;
+    padding: 0.75rem 0;
+    color: var(--text-color-main);
+}
+
+form .submitBtn {
+    border: none;
+    background-color: var(--accent3-color);
+    color: var(--text-color-secondary);
+    padding: 0.75rem 1.5rem;
+    border-radius: 1rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}
+
+form .submitBtn:hover {
+    background-color: var(--accent4-color);
+    cursor: pointer;
+}
+
+form label.top input:required {
+    border-left: var(--error-text) solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: var(--success-text) solid 6px;
+}
+
+.success {
+    margin-top: 5px;
+    padding: 15px;
+    background-color: var(--success-background);
+    border-color: var(--success-border);
+    color: var(--success-text);
+}
+
+.error {
+    margin-top: 5px;
+    padding: 15px;
+    background-color: var(--error-background);
+    border-color: var(--error-border);
+    color: var(--error-text);
+}
+
+.show {
+    display: flex;
+}
+
+.hide {
+    display: none;
+}
+
+#directory {
+    margin: 2rem;
+    position: relative;
+}
+
+#directory h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 0 0 1rem 0;
+}
+
+.menu {
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.menu button {
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--accent3-color);
+    color: var(--text-color-secondary);
+    cursor: pointer;
+}
+
+.member {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0.25rem;
+    padding: 0.35rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    color: var(--text-color-main);
+    height: 310px;
+}
+
+.member h3 {
+    font-size: 1.2rem;
+}
+
+.member p {
+    font-size: 0.75rem;
+}
+
+.member a {
+    font-size: 0.65rem;
+    color: var(--primary-color);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 5px;
+    align-items: center;
+}
+
+.grid section {
+    text-align: center;
+}
+
+.grid section>* {
+    margin: 0.1rem;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.list section {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 0;
+    height: 35px;
+}
+
+.list section>* {
+    margin: 0 1rem;
+}
+
+.list section img {
+    display: none;
+}
+
+.list section h3 {
+    font-size: 0.75rem;
+}
+
+.list section:nth-child(even) {
+    background-color: #e5e6e7;
+}
