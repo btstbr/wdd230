@@ -1,82 +1,51 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Directory of Members | West Valley Chamber or Commerce</title>
-    <meta name="description" content="Directory of Members - West Valley Chamber or Commerce" />
-    <link rel="canonical" href="https://vwolfley.github.io/wdd230/chamber" />
-    <meta name="author" content="Vern Wolfley" />
-    <meta name="copyright" content="Copyright 2024" />
-    <meta name="theme-color" content="#006EB6" />
+    <meta charset="UTF-8">
+    <link rel="icon" href="images/favicon-chamber.webp">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Rafael Batista">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" media="(min-width: 769px)" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
 
-    <!-- Facebook Meta Tags -->
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Directory of Members - West Valley Chamber or Commerce" />
-    <meta property="og:description" content="West Valley Chamber or Commerce - Directory of Members" />
-    <meta property="og:url" content="https://vwolfley.github.io/wdd230/chamber" />
-    <meta property="og:site_name" content="Directory of Members - West Valley Chamber or Commerce" />
-    <meta property="og:image" content="https://vwolfley.github.io/wdd230/chamber/images/west-valley-lp.webp" />
-    <meta property="og:image:alt" content="An arial photo of the Phoenix, AZ west valley area." />
-    <meta property="og:image:type" content="image/webp" />
-    <meta property="og:image:width" content="1280" />
-    <meta property="og:image:height" content="800" />
-    <!-- Twitter Meta Tags -->
-    <meta name="twitter:title" content="Directory of Members - West Valley Chamber or Commerce" />
-    <meta name="twitter:description" content="Directory of Members - West Valley Chamber or Commerce" />
-    <meta name="twitter:image" content="https://vwolfley.github.io/wdd230/chamber/images/west-valley-lp.webp" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <!-- specific icons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.webp" />
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.webp" />
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.webp" />
-    <link rel="manifest" href="site.webmanifest" />
-
-    <link type="text/plain" rel="author" href="humans.txt" />
-
-    <link type="text/css" rel="stylesheet" href="./styles/normalize.css" />
-    <link type="text/css" rel="stylesheet" href="./styles/base.css" />
-    <link type="text/css" rel="stylesheet" href="./styles/medium.css" />
-    <link type="text/css" rel="stylesheet" href="./styles/larger.css" />
+    <title>Salt Lake City Chamber of Commerce</title>
+    <meta name="description" content="Salt Lake City Chamber of Commerce Website">
+    <meta property="og:title" content="Salt Lake City Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010125.jpg?w=996&t=st=1705374023~exp=1705374623~hmac=a45e582e9900fdd60141c718a3594f883f23965196df2867c282295845407406">
+    <meta property="og:url" content="https://btstbr.github.io/wdd230/">
+    <meta property="og:description" content="Salt Lake City Chamber of Commerce Website">
+    <meta property="article:author" content="Rafael Batista">
 </head>
 
 <body>
-    <header class="nav">
-        <div class="nav-brand">
-            <img src="images/logos/vwcc-logo.webp" alt="West Valley Chamber of Commerce" />
-            <h1 id="nav-title">West Valley Chamber of Commerce</h1>
-        </div>
-        <div class="nav-box">
-            <div class="nav-info">
-                <input type="checkbox" id="nav-toggle" class="nav-toggle" />
-                <nav class="nav-links">
-                    <ul>
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="./discover.html">Discover</a></li>
-                        <li><a href="./directory.html">Directory</a></li>
-                        <li><a href="./join.html">Join</a></li>
-                    </ul>
-                </nav>
-                <label for="nav-toggle" class="nav-btn">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </label>
-            </div>
 
-            <div class="dark-mode-btn">
-                <input type="checkbox" id="darkOption" class="checkbox" onclick="screenMode()" />
-                <label for="darkOption" class="toggle">
-                    <span class="slider"></span>
-                </label>
-            </div>
-        </div>
+    <!-- header section start -->
+    <header>
+        <img src="images/logo-chamber.webp" alt="Logo">
+        <h1>Salt Lake City Chamber of Commerce</h1>
     </header>
-    <!-- Content -->
+
+    <!-- nav section start -->
+    <div class="menu-icon" onclick="toggleNav()">
+        <div class="icon-open">&#9776;</div>
+        <div class="icon-close">&#10006;</div>
+    </div>
+
+    <nav>
+        <p><a class="nav-link" href="index.html">Home</a></p>
+        <p><a class="nav-link" href="discover.html">Discover</a></p>
+        <p><a class="nav-link" href="#">About</a></p>
+        <p><a class="nav-link" href="join.html">Join Us</a></p>
+    </nav>
+
+    <!-- Dark mode -->
+    <div id="toggle-btn" onclick="toggleDarkMode()">🌙</div>
+
+    <!-- main section start -->
     <main id="directory">
         <h2>Directory of Business Members</h2>
         <div class="menu">
@@ -85,44 +54,14 @@
         </div>
         <article id="members" class="grid"></article>
     </main>
-    <!-- Footer  -->
-    <footer>
-        <section class="footer">
-            <div class="footer-title">
-                <img src="images/logos/vwcc-logo.webp" alt="West Valley Chamber of Commerce" />
-                <h2>West Valley Chamber of Commerce</h2>
-            </div>
-            <div class="footer-addr">
-                <h3>Contact</h3>
-                <address>
-                    5555 W Somewhere Blvd<br />
-                    Litchfield Park, AZ 85340<br />
-                    <a class="footer-btn" href="mailto:example@gmail.com">Email Us</a>
-                </address>
-            </div>
-            <div class="footer-nav">
-                <h3>Links</h3>
-                <ul class="">
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./discover.html">Discover</a></li>
-                    <li><a href="./directory.html">Directory</a></li>
-                    <li><a href="./join.html">Join</a></li>
-                </ul>
-            </div>
 
-            <div class="legal">
-                <div class="">
-                    <span><span id="cYear">&copy;</span> West Valley Chamber of Commerce | Vern Wolfley | WDD 230
-                        Project</span>
-                </div>
-                <div class="">
-                    <span id="lastModified"></span>
-                </div>
-            </div>
-        </section>
+    <!-- footer section start -->
+    <footer>
+        <p class="copyright_text">© Your Name, Your State/Country</p>
+        <p class="last_modified">Last Modified: #</p>
+        <p class="course">WDD 230 - Web Frontend Development</p>
     </footer>
-    <!-- /Footer  -->
-    <script src="scripts/chamberJS.js"></script>
+    <script src="scripts/getdates.js"></script>
     <script src="scripts/members.js"></script>
 </body>
 
