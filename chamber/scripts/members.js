@@ -43,6 +43,8 @@ const displayMembers = (members) => {
         const website = document.createElement("a");
         website.setAttribute("href", `https://${member.website}`);
         website.textContent = member.website;
+        const membership = document.createElement("p");
+        membership.textContent = member.membership;
 
         const logo = document.createElement("img");
         logo.setAttribute("src", member.logo);
@@ -57,6 +59,7 @@ const displayMembers = (members) => {
         bizCard.appendChild(address2);
         bizCard.appendChild(phone);
         bizCard.appendChild(website);
+        bizCard.appendChild(membership);
 
         // add the section card to the "cards" div
         cards.appendChild(bizCard);
