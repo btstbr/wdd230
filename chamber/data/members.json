@@ -1,67 +1,88 @@
 {
     "members": [
         {
-            "name": "Ficticious Company 1",
-            "address": "123 Main Street",
-            "phone": "555-555-0001",
-            "website": "http://www.ficticiouscompany1.example.com",
-            "icon": "/wdd230/chamber/images/town.webp",
-            "membership": "Gold",
-            "description": "A ficticious company that does ficticious things."
-        },
-        {
-            "name": "Ficticious Company 2",
-            "address": "777 Fake Street",
-            "phone": "555-555-0002",
-            "website": "http://www.ficticiouscompany2.example.com",
-            "icon": "/wdd230/chamber/images/town.webp",
-            "membership": "Silver",
-            "description": "A ficticious company that does ficticious things but different than Ficticious Company 1."
-        },
-        {
-            "name": "Ficticious Company 3",
-            "address": "8734 Ficticious Street",
-            "phone": "555-555-0003",
-            "website": "http://www.ficticiouscompany3.example.com",
-            "icon": "/wdd230/chamber/images/town.webp",
-            "membership": "Gold",
-            "description": "Ficticious Company 3 does ficticious things."
-        },
-        {
-            "name": "Ficticious Company 4",
-            "address": "887 notreal Court",
-            "phone": "555-555-0004",
-            "website": "http://www.ficticiouscompany4.example.com",
-            "icon": "/wdd230/chamber/images/town.webp",
-            "membership": "NP",
-            "description": "a ficticious company that does ficticious things but in the same way as Ficticious Company 3."
-        },
-        {
-            "name": "Ficticious Company 5",
-            "address": "unit 8 fakery place",
-            "phone": "555-555-0005",
-            "website": "http://www.ficticiouscompany5.example.com",
-            "icon": "/wdd230/chamber/images/town.webp",
+            "company": "AllenComm",
+            "address": "55 W 900 S",
+            "city": "Salt Lake City",
+            "state": "UT",
+            "zip": "84101",
+            "phone": "999-999-9999",
+            "website": "https://www.allencomm.com/",
+            "logo": "https://www.allencomm.com/wp-content/themes/x/assets/imgs/logo_color.svg",
             "membership": "Bronze",
-            "description": "Ficticious management of ficticious activities."
+            "category": "B2B Services"
         },
         {
-            "name": "Ficticious Company 6",
-            "address": "666 idonotexist crescent",
-            "phone": "555-555-0006",
-            "website": "http://www.ficticiouscompany6.example.com",
-            "icon": "/wdd230/chamber/images/town.webp",
-            "membership": "Silver",
-            "description": "a different kind of ficticious work."
-        },
-        {
-            "name": "Ficticious Company 7",
-            "address": "729 notareal place",
-            "phone": "555-555-0007",
-            "website": "http://www.ficticiouscompany7.example.com",
-            "icon": "/wdd230/chamber/images/town.webp",
+            "company": "BBSI Salt Lake City",
+            "address": "257 E 200 S Suite 100",
+            "city": "Salt Lake City",
+            "state": "UT",
+            "zip": "84111",
+            "phone": "999-888-7777",
+            "website": "https://www.bbsi.com/saltlakecity",
+            "logo": "https://vwolfley.github.io/wdd230/chamber/images/biz-logos/rei-logo.webp",
             "membership": "Gold",
-            "description": "a ficiticious company that owns ficticious companies."
+            "category": "Business Consulting"
+        },
+        {
+            "company": "Byron Russell LLC",
+            "address": "44 W Broadway UNIT 907",
+            "city": "Salt Lake City",
+            "state": "UT",
+            "zip": "84101",
+            "phone": "222-562-0000",
+            "website": "https://byronrussell.com/",
+            "logo": "https://vwolfley.github.io/wdd230/chamber/images/biz-logos/sub-zero-logo.webp",
+            "membership": "Silver",
+            "category": "Business Consulting"
+        },
+        {
+            "company": "JLB Companies",
+            "address": "830 S 500 W",
+            "city": "Salt Lake City",
+            "state": "UT",
+            "zip": "84101",
+            "phone": "665-555-8888",
+            "website": "https://www.jlbcompanies.com/",
+            "logo": "https://vwolfley.github.io/wdd230/chamber/images/biz-logos/hello-fresh-logo.webp",
+            "membership": "Gold",
+            "category": "Business Development"
+        },
+        {
+            "company": "Salt City Connection",
+            "address": "918 S 500 W Suite D",
+            "city": "Salt Lake City",
+            "state": "UT",
+            "zip": "84101",
+            "phone": "111-522-8787",
+            "website": "https://saltcityconnection.com/",
+            "logo": "https://vwolfley.github.io/wdd230/chamber/images/biz-logos/galaxy-logo-blue.webp",
+            "membership": "Bronze",
+            "category": "Packaging"
+        },
+        {
+            "company": "Allegiance Group, Inc",
+            "address": "299 S Main St #1300",
+            "city": "Salt Lake City",
+            "state": "UT",
+            "zip": "84111",
+            "phone": "777-222-2563",
+            "website": "https://allegiancegroup-inc.com/",
+            "logo": "https://vwolfley.github.io/wdd230/chamber/images/biz-logos/sonoran-technology.webp",
+            "membership": "Silver",
+            "category": "Business Management"
+        },
+        {
+            "company": "Productivity Inc",
+            "address": "4205 W 1980 S",
+            "city": "Salt Lake City",
+            "state": "UT",
+            "zip": "84104",
+            "phone": "333-444-5555",
+            "website": "https://www.productivity.com/",
+            "logo": "https://vwolfley.github.io/wdd230/chamber/images/biz-logos/raytheon-emblem.webp",
+            "membership": "Gold",
+            "category": "Metal Machinery"
         }
     ]
 }
