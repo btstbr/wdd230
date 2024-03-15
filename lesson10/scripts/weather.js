@@ -1,12 +1,10 @@
+// Trier, Germany 49.75005827713899, 6.637727902911176
+// API key
+// 8ac72bb0b3631147a7d4989058be0c9d
+
 // https://openweathermap.org/current
-// https://openweathermap.org/weathermap
-// API key: 0aec6412eede92415f476e7030db63f4
-const apiKey = "8ac72bb0b3631147a7d4989058be0c9d";
 
-const lat = -23.502;
-const lon = -47.458;
-
-const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=imperial&appid=${apiKey}`;
+const url = "https://api.openweathermap.org/data/2.5/weather?lat=49.7500&lon=6.6377&units=imperial&appid=8ac72bb0b3631147a7d4989058be0c9d";
 
 async function apiFetch() {
     try {
@@ -25,30 +23,32 @@ async function apiFetch() {
 apiFetch();
 
 function displayResults(data) {
-    const location = document.querySelector("#location");
     const currentTemp = document.querySelector("#current-temp");
     const weatherIcon = document.querySelector("#weather-icon");
     const captionDesc = document.querySelector("#weather-description");
-    const feelsLike = document.querySelector("#feels-like");
-    const windSpeed = document.querySelector("#wind-speed");
-    const humidity = document.querySelector("#humidity");
 
-
-    location.innerHTML = data.name;
     // Format temperature to show zero decimal points
     const formattedTemp = data.main.temp.toFixed(0);
     // Display current temperature
-    currentTemp.innerHTML = `${formattedTemp}&deg;F`;
-    feelsLike.innerHTML = `${data.main.feels_like.toFixed(0)}&deg;F`;
-    windSpeed.innerHTML = `${data.wind.speed.toFixed(0)}mph`;
-    humidity.innerHTML = `${data.main.humidity}%`;
+    currentTemp.innerHTML = `${formattedTemp} &deg;F`;
 
     // Display weather icon and description
     data.weather.forEach((weatherEvent) => {
         const iconsrc = `https://openweathermap.org/img/wn/${weatherEvent.icon}@2x.png`;
         let desc = weatherEvent.description;
+        desc = capitalizeSting(desc);
         weatherIcon.setAttribute("src", iconsrc);
         weatherIcon.setAttribute("alt", desc);
         captionDesc.innerHTML = `${desc}`;
     });
+}
+
+function capitalizeSting(myString) {
+    const words = myString.split(" ");
+
+    return words
+        .map((word) => {
+            return word[0].toUpperCase() + word.substring(1);
+        })
+        .join(" ");
 }
