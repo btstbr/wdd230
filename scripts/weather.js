@@ -1,6 +1,6 @@
 // https://openweathermap.org/current
 // https://openweathermap.org/weathermap
-// API key: 0aec6412eede92415f476e7030db63f4
+
 const apiKey = "8ac72bb0b3631147a7d4989058be0c9d";
 
 const lat = -23.502;
