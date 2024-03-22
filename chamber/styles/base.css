@@ -675,11 +675,21 @@ input {
 
 input[type=submit] {
     border: 2px solid #2c3e50;
-    display: inline-block;
+    display: block;
+    /* Altere para display: block para que o botão ocupe toda a largura disponível */
+    width: 100%;
+    /* Defina a largura como 100% para ocupar toda a largura do container */
     background-color: #2c3e50;
     color: #fff;
     transition: background-color ease-in-out 0.2s;
+    box-sizing: border-box;
+    /* Mantém a largura total do elemento considerando padding e borda */
+    padding: 10px 20px;
+    /* Ajuste o preenchimento conforme necessário */
+    text-align: center;
+    /* Centralize o texto dentro do botão */
 }
+
 
 input[type=submit]:hover {
     background-color: #405258;
@@ -728,14 +738,13 @@ form {
 
 .title {
     display: block;
-}
-
-.title {
     font-size: 1.2em;
     font-weight: bold;
-    margin: 0;
+    margin: 1em 0 0;
+    /* Adiciona margem superior de 1em e mantém as margens laterais em 0 */
     text-align: center;
 }
+
 
 .buttonframe {
     display: flex;
@@ -887,22 +896,19 @@ form {
     color: var(--text-color-main);
 }
 
-form fieldset {
-    margin: 1rem 0;
-    border: 1px solid var(--primary-color);
-    border-radius: 10px;
-    padding: 0.5rem 2%;
-}
 
-form fieldset:last-of-type {
-    margin-bottom: 5px;
-}
 
 form legend {
     color: var(--primary-color);
     margin: 0 1rem;
     padding: 0 0.5rem;
+    font-weight: bold;
+    /* Adiciona negrito ao texto dentro do elemento legend */
+    font-size: 1.2em;
+    /* Aumenta o tamanho da fonte */
 }
+
+
 
 form label.top,
 form div {
