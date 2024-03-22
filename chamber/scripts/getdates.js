@@ -1,3 +1,5 @@
+const dataURLfeat = "https://btstbr.github.io/wdd230/chamber/data/members.json";
+
 // script.js
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -107,3 +109,50 @@ document.addEventListener("DOMContentLoaded", function () {
         banner.classList.add("hidden");
     });
 });
+
+// Função para carregar e exibir membros de destaque aleatórios
+function loadSpotlightMembers() {
+    fetch(dataURLfeat) // Substitua 'data.json' pelo caminho do seu arquivo JSON
+        .then(response => response.json())
+        .then(data => {
+            // Filtrar membros com status prata ou ouro
+            const silverAndGoldMembers = data.members.filter(member => member.membership === "Silver" || member.membership === "Gold");
+
+            // Selecionar aleatoriamente 2 ou 3 membros para exibir
+            const selectedMembers = [];
+            while (selectedMembers.length < Math.floor(Math.random() * 2) + 2 && silverAndGoldMembers.length > 0) {
+                const randomIndex = Math.floor(Math.random() * silverAndGoldMembers.length);
+                selectedMembers.push(silverAndGoldMembers[randomIndex]);
+                silverAndGoldMembers.splice(randomIndex, 1);
+            }
+
+
+
+            // Criar HTML para os membros selecionados
+
+            const spotlightCards = document.getElementById('spotlightCards');
+            spotlightCards.innerHTML = '';
+            selectedMembers.forEach(member => {
+                const card = document.createElement('article');
+                card.className = 'card';
+                card.innerHTML = `
+                <img src="${member.logo}" alt="Logo" style="width: 100px; height: auto;">
+                <p><b>${member.company}</b></p>
+            <p>${member.address}</p>
+            <p>${member.address}, ${member.city}, ${member.state} ${member.zip}</p>
+            <div class="contact-info">
+            <ul>
+            <li><a href="tel:${member.phone}">${member.phone}</a></li>
+            <li><a href="mailto:${member.website}">${member.website}</a></li>
+            <p><b>${member.membership}</b></p>
+            </ul>
+            </div>
+             `;
+                spotlightCards.appendChild(card);
+            });
+        })
+        .catch(error => console.error('Erro ao carregar membros de destaque:', error));
+}
+
+// Carregar membros de destaque ao carregar a página
+window.onload = loadSpotlightMembers;

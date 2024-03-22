@@ -1249,3 +1249,36 @@ form label.top input:required:valid {
 .hidden {
     display: none;
 }
+
+.spotlights {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--text-color-main);
+    height: 310px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 10px;
+    width: 200px;
+    /* Defina a largura do card conforme necessário */
+}
+
+.card img {
+    width: 75px;
+    /* Largura da imagem */
+    height: auto;
+    /* Mantém a proporção da imagem */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* Espaço entre o topo do card e a imagem */
+}
