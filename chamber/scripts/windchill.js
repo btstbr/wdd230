@@ -10,11 +10,23 @@ function calculateWindChill(temperature, windSpeed) {
 }
 
 // Testing:
-var temperature = 34; // Temperature in Fahrenheit
-var windSpeed = 20; // Wind speed in mph
-var windChill = calculateWindChill(temperature, windSpeed);
-console.log("Wind Chill Factor: " + windChill);
+var temperatureFahrenheit = 34; // Temperature in Fahrenheit
+var windSpeedMph = 20; // Wind speed in mph
+var temperatureCelsius = convertToFahrenheitToCelsius(temperatureFahrenheit);
+var windChillCelsius = calculateWindChill(temperatureCelsius, windSpeedMph);
+console.log("Wind Chill Factor: " + windChillCelsius + "°C");
 
-document.getElementById("temp").innerHTML = temperature;
-document.getElementById("wind-speed").innerHTML = windSpeed;
-document.getElementById("wind-chill").innerHTML = windChill;
+document.getElementById("temp-area").innerHTML = temperatureCelsius + "°C";
+document.getElementById("wind-speed").innerHTML = windSpeedMph + " mph";
+document.getElementById("wind-chill").innerHTML = windChillCelsius + "°C";
+
+// Função para converter Fahrenheit para Celsius
+function convertToFahrenheitToCelsius(temperatureFahrenheit) {
+    return (temperatureFahrenheit - 32) * 5 / 9;
+}
+
+// Função para calcular o fator de sensação térmica do vento em Celsius
+function calculateWindChill(temperatureCelsius, windSpeedMph) {
+    // Fórmula para calcular o fator de sensação térmica do vento
+    return 13.12 + (0.6215 * temperatureCelsius) - (11.37 * Math.pow(windSpeedMph, 0.16)) + (0.3965 * temperatureCelsius * Math.pow(windSpeedMph, 0.16));
+}

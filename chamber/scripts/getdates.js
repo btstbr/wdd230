@@ -139,7 +139,7 @@ function loadSpotlightMembers() {
                 <img src="${member.logo}" alt="Logo" style="width: 100px; height: auto;">
                 <p><b>${member.company}</b></p>
             <p>${member.address}</p>
-            <p>${member.address}, ${member.city}, ${member.state} ${member.zip}</p>
+            <p>${member.city}, ${member.state} ${member.zip}</p>
             <div class="contact-info">
             <ul>
             <li><a href="tel:${member.phone}">${member.phone}</a></li>
