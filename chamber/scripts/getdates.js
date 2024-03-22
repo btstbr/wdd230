@@ -97,7 +97,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Verifica se é segunda, terça ou quarta-feira
     var today = new Date();
     var dayOfWeek = today.getDay(); // Domingo = 0, Segunda = 1, Terça = 2, ..., Sábado = 6
-    var isOpenDay = dayOfWeek >= 1 && dayOfWeek <= 3;
+    var isOpenDay = dayOfWeek >= 1 && dayOfWeek <= 7;
 
     if (isOpenDay) {
         banner.classList.remove("hidden");
