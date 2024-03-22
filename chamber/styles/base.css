@@ -1051,17 +1051,24 @@ form label.top input:required:valid {
 .list {
     display: flex;
     flex-direction: column;
+    align-items: stretch;
+    /* Garante que os itens se estendam para preencher o contêiner verticalmente */
 }
 
 .list section {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    /* Uso de minmax para garantir que as colunas possam diminuir até zero */
     margin: 0;
-    height: 35px;
+    height: auto;
+    /* Altura automática para se ajustar ao conteúdo */
 }
 
 .list section>* {
-    margin: 0 1rem;
+    margin: 0 0.5em;
+    /* Reduzi um pouco as margens para economizar espaço */
+    max-width: 100%;
+    /* Garante que os itens não ultrapassem a largura do contêiner */
 }
 
 .list section img {
@@ -1075,6 +1082,8 @@ form label.top input:required:valid {
 .list section:nth-child(even) {
     background-color: #e5e6e7;
 }
+
+
 
 /* Weather Article ********************************* */
 
