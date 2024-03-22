@@ -107,12 +107,3 @@ document.addEventListener("DOMContentLoaded", function () {
         banner.classList.add("hidden");
     });
 });
-
-
-
-
-
-
-
-
-
