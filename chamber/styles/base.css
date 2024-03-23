@@ -319,6 +319,7 @@ ul {
 .event {
     flex: 1;
     margin: 0 10px;
+    margin-top: 10px;
     border: 1px solid #ccc;
     padding: 10px;
     border-radius: 10px;
@@ -367,17 +368,6 @@ ul {
 .weather-data {
     text-align: left;
     /* Alinha os dados do clima à esquerda */
-}
-
-/* Estilizando a seção de spotlights */
-.spotlights {
-    display: flex;
-    justify-content: space-around;
-    /* Distribui os elementos igualmente na horizontal */
-    padding: 20px 0;
-    /* Adiciona espaçamento acima e abaixo da seção (pode ajustar conforme necessário) */
-
-    /* Adiciona uma cor de fundo (opcional) */
 }
 
 /* Estilizando o contêiner de cards */
@@ -562,16 +552,23 @@ footer {
     }
 
     .cards {
+        display: flex;
         flex-direction: column;
+        /* Organiza os cards em uma coluna */
+        align-items: center;
+        /* Centraliza horizontalmente */
     }
+
+    .card {
+        margin: 0 10px;
+        /* Ajusta as margens entre os cards */
+    }
+
 
     .event {
         margin: 10px;
     }
 
-    .card {
-        margin: 10px;
-    }
 
     .hero_img h1 {
         font-size: 1.5em;
@@ -1250,16 +1247,6 @@ form label.top input:required:valid {
     display: none;
 }
 
-.spotlights {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    color: var(--text-color-main);
-    height: 310px;
-}
-
 .card {
     display: flex;
     flex-direction: column;
@@ -1281,4 +1268,13 @@ form label.top input:required:valid {
     margin-top: 10px;
     margin-bottom: 10px;
     /* Espaço entre o topo do card e a imagem */
+}
+
+.spotlights {
+    display: flex;
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+
+
 }
