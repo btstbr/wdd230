@@ -1,52 +1,58 @@
 {
     "rentals": [
         {
-            "vehicle": "Honda Metro Scooter",
-            "capacity": "1",
-            "reshalf": "$20",
-            "resfull": "$30",
-            "walkhalf": "$25",
-            "walkfull": "$35"
+            "class": "scooter",
+            "type": "Honda Metro Scooter",
+            "persons": 1,
+            "reservation_half_day": 20,
+            "reservation_full_day": 30,
+            "walk_in_half_day": 25,
+            "walk_in_full_day": 35
         },
         {
-            "vehicle": "Honda Dio Scooter",
-            "capacity": "2",
-            "reshalf": "$30",
-            "resfull": "$40",
-            "walkhalf": "$35",
-            "walkfull": "$45"
+            "class": "scooter",
+            "type": "Honda Dio Scooter",
+            "persons": 2,
+            "reservation_half_day": 30,
+            "reservation_full_day": 40,
+            "walk_in_half_day": 35,
+            "walk_in_full_day": 45
         },
         {
-            "vehicle": "Honda PCX150 Scooter",
-            "capacity": "2",
-            "reshalf": "$40",
-            "resfull": "$50",
-            "walkhalf": "$45",
-            "walkfull": "$55"
+            "class": "scooter",
+            "type": "Honda PCX150 Scooter",
+            "persons": 2,
+            "reservation_half_day": 40,
+            "reservation_full_day": 50,
+            "walk_in_half_day": 45,
+            "walk_in_full_day": 55
         },
         {
-            "vehicle": "Honda Pioneer ATV",
-            "capacity": "4",
-            "reshalf": "$50",
-            "resfull": "$70",
-            "walkhalf": "$60",
-            "walkfull": "$80"
+            "class": "atv",
+            "type": "Honda Pioneer ATV",
+            "persons": 4,
+            "reservation_half_day": 50,
+            "reservation_full_day": 70,
+            "walk_in_half_day": 60,
+            "walk_in_full_day": 80
         },
         {
-            "vehicle": "Jeep Wrangler - 4 door w/ AC",
-            "capacity": "5",
-            "reshalf": "$70",
-            "resfull": "$100",
-            "walkhalf": "$85",
-            "walkfull": "$125"
+            "class": "jeep",
+            "type": "Jeep Wrangler - 2 door",
+            "persons": 4,
+            "reservation_half_day": 60,
+            "reservation_full_day": 85,
+            "walk_in_half_day": 70,
+            "walk_in_full_day": 90
         },
         {
-            "vehicle": "Jeep Wrangler - 2 door",
-            "capacity": "4",
-            "reshalf": "$60",
-            "resfull": "$85",
-            "walkhalf": "$70",
-            "walkfull": "$90"
+            "class": "jeep",
+            "type": "Jeep Wrangler - 4 door a/c",
+            "persons": 5,
+            "reservation_half_day": 70,
+            "reservation_full_day": 100,
+            "walk_in_half_day": 85,
+            "walk_in_full_day": 125
         }
     ]
 }

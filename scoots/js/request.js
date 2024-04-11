@@ -1,48 +1,66 @@
 const requestURL = 'https://btstbr.github.io/wdd230/scoots/data/rentjson.json';
 
 
-fetch(requestURL)
-    .then(function (response) {
-        return response.json();
-    })
-    .then(function (jsonObject) {
-        console.log(jsonObject);
-        for (i = 0; i < 6; i++) {
-            let row = "row" + i;
-            let source = jsonObject.rentals[i];
-
-            let col0 = document.createElement("td");
-            col0.textContent = source.vehicle;
-            document.getElementById(row).appendChild(col0);
-
-            let col1 = document.createElement("td");
-            col1.textContent = source.capacity;
-            document.getElementById(row).appendChild(col1);
-
-            let col2 = document.createElement("td");
-            col2.textContent = source.reshalf;
-            document.getElementById(row).appendChild(col2);
-
-            let col3 = document.createElement("td");
-            col3.textContent = source.resfull;
-            document.getElementById(row).appendChild(col3);
-
-            let col4 = document.createElement("td");
-            col4.textContent = source.walkhalf;
-            document.getElementById(row).appendChild(col4);
-
-            let col5 = document.createElement("td");
-            col5.textContent = source.walkfull;
-            document.getElementById(row).appendChild(col5);
-
-            /*
-            let id = "row" + i;
-            document.getElementById(id).innerHTML= jsonObject.rentals[i].vehicle;
-      
-            let cap = "cap" + i;
-            document.getElementById(cap).innerHTML= jsonObject.rentals[i].capacity;
-      
-            */
-
+async function getRentalData() {
+    try {
+        const response = await fetch(dataURL);
+        if (!response.ok) {
+            throw new Error("Failed to fetch data");
         }
+        const data = await response.json();
+        // console.log(data);
+        displayRatesTable(data.rentals);
+        displayRatesCards(data.rentals);
+        return data;
+    } catch (error) {
+        console.error("Error fetching data:", error);
+        throw error;
+    }
+}
+getRentalData();
+
+const displayRatesTable = (rentals) => {
+    // console.log(rentals);
+    const priceTable = document.querySelector(".pricing tbody");
+
+    rentals.forEach((type) => {
+        const row = document.createElement("tr");
+        row.innerHTML = `
+            <td>${type.type}</td>
+            <td>${type.persons}</td>
+            <td>$${type.reservation_full_day}</td>
+            <td>$${type.reservation_half_day}</td>
+            <td>$${type.walk_in_full_day}</td>
+            <td>$${type.walk_in_half_day}</td>
+        `;
+        priceTable.appendChild(row);
     });
+};
+
+const displayRatesCards = (rentals) => {
+    const priceCards = document.querySelectorAll(".rental-rides-info .card-body h3");
+
+    priceCards.forEach((priceCard, index) => {
+        const type = rentals[index];
+
+        const cardInfo = document.createElement("div");
+
+        cardInfo.innerHTML = `
+        <p>Max persons: ${type.persons}</p>
+            <h4>Reservation</h4>
+            <div class="cost-type">
+            <p><span class="cost">$${type.reservation_full_day}</span>/full</p>
+            <span class="cost-sp">/</span>
+            <p><span class="cost">$${type.reservation_half_day}</span>/half</p>
+            </div>
+            <h4>Same Day</h4>
+            <div class="cost-type">
+            <p><span class="cost">$${type.walk_in_full_day}</span>/full</p>
+            <span class="cost-sp">/</span>
+            <p><span class="cost">$${type.walk_in_half_day}</span>/half</p>
+            </div>
+            `;
+
+        priceCard.insertAdjacentElement("afterend", cardInfo);
+    });
+};

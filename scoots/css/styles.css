@@ -589,6 +589,66 @@ form button {
     border-radius: 10px;
 }
 
+/* Pricing Table */
+.pricing {
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+    color: var(--text-color-header);
+    order: 2;
+}
+
+table {
+    margin: 10px auto;
+    border: thin solid var(--border);
+    box-shadow: 0 0 10px var(--shadow);
+    border-collapse: collapse;
+    font-size: 0.75rem;
+}
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+    color: var(--back);
+    font-size: 0.85rem;
+}
+
+thead tr:first-child th {
+    background-color: var(--back);
+    color: var(--text-color-header);
+    font-size: 1.3rem;
+    padding: 15px;
+}
+
+thead tr:nth-child(2) th:first-child {
+    background-color: var(--back);
+    color: var(--forelight);
+    padding: 15px;
+}
+
+th,
+td {
+    padding: 7px 15px;
+    border: 1px solid var(--borderlight);
+}
+
+th {
+    background-color: var(--back2);
+    padding: 15px;
+}
+
+td {
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--zebra);
+}
+
+tbody tr td:first-child {
+    font-weight: bold;
+}
+
 /* Larger screen styles within the media query */
 @media (min-width: 768px) {
 
