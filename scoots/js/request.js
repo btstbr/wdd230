@@ -1,4 +1,4 @@
-const requestURL = 'https://btstbr.github.io/wdd230/scoots/data/rentjson.json';
+const dataURL = 'https://btstbr.github.io/wdd230/scoots/data/rentjson.json';
 
 
 async function getRentalData() {

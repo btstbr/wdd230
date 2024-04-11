@@ -512,24 +512,6 @@ nav ul .active {
     margin: 0;
 }
 
-/*-----------TABLE--------------*/
-table {
-    text-align: center;
-    border-collapse: collapse;
-    margin: 0 5%;
-    margin-bottom: 15px;
-    font-family: "Open Sans Condensed", sans-serif;
-}
-
-td {
-    padding: .3rem;
-    border: 1px solid black;
-}
-
-iframe {
-    margin: 0px 50% 0px 10px;
-}
-
 /*---------------FORM----------*/
 fieldset {
     font-family: "Open Sans Condensed", sans-serif;
@@ -603,7 +585,8 @@ table {
     border: thin solid var(--border);
     box-shadow: 0 0 10px var(--shadow);
     border-collapse: collapse;
-    font-size: 0.75rem;
+    font-size: 1rem;
+    font-family: "Open Sans Condensed", sans-serif;
 }
 
 caption {
