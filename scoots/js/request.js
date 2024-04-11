@@ -1,4 +1,4 @@
-const requestURL = 'https://btstbr.github.io/wdd230/scoots/js/rentjson.json';
+const requestURL = 'https://btstbr.github.io/wdd230/scoots/data/rentjson.json';
 
 
 fetch(requestURL)
