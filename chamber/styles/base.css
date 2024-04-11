@@ -742,17 +742,6 @@ form {
     text-align: center;
 }
 
-
-.buttonframe {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 300px;
-    /* Defina a largura máxima desejada para o container */
-    margin: 0 auto;
-    /* Centralize o container na horizontal */
-}
-
 .label {
     display: block;
     padding-left: 20px;

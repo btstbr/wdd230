@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Scoots Rentals Tours Page">
+    <title>Scoots Rentals Tours</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Galada&family=Open+Sans+Condensed:wght@300&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <h1>Scoots Rentals</h1>
+        <h2>Your Vacation Vehicle Headquarters</h2>
+
+        <div id="menu">
+            <nav>
+
+                <button id="dropdownbutton" type="button" class="small menu" onclick="toggleMenu()">&#9776;
+                    Menu</button>
+                <ul id="dropdown" class="">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pages/rentals.html">Rentals</a></li>
+                    <li><a href="pages/reservations.html">Reservations</a></li>
+                    <li class="active"><a href="pages/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="bg"></div>
+    </header>
+
+    <main>
+        <h3 class="ban">TOURS</h3>
+        <p>Looking for a tour? Check out our tour times and options below. Want to register? Reach out on our Contact Us
+            page.</p>
+        <p>We have the best tours on all of Cozumel. Your experienced tourguide will take you all over the place and
+            provide you with great
+            insider secrets about the island, all while protecting you from the ravenous Gila Monsters that roam the
+            land.
+        </p>
+        <h3 class="ban">TOUR SCHEDULE</h3>
+        <table>
+            <thead>
+                <tr>
+                    <td>Monday</td>
+                    <td>Wednesday</td>
+                    <td>Friday</td>
+                    <td>Saturday</td>
+                </tr>
+            </thead>
+            <tr>
+                <td>8:00 AM</td>
+                <td>8:00 AM</td>
+                <td>8:00 AM</td>
+                <td>8:00 AM</td>
+            </tr>
+            <tr>
+                <td>10:00 AM</td>
+                <td></td>
+                <td>10:00 AM</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>12:15 PM</td>
+                <td>12:15 PM</td>
+                <td>12:15 PM</td>
+            </tr>
+            <tr>
+                <td>3:00 PM</td>
+                <td>3:00 PM</td>
+                <td>3:00 PM</td>
+                <td>3:00 PM</td>
+            </tr>
+            <tr>
+                <td>11:30 PM</td>
+                <td></td>
+                <td></td>
+                <td>11:30 PM</td>
+            </tr>
+
+        </table>
+    </main>
+
+    <footer>
+        <p>Contact Us: 1 (800) 123-4567 | scoots@scoots.com </p>
+        <p id="datetime"></p>
+        <p>&copy; 2024 - Rafael Batista | WDD 230 | <a href="resources.html">Resources</a></p>
+        <p id="p2">Last Updated: <span id="timedisp"></span></p>
+
+    </footer>
+    <script src="../js/scoots.js"></script>
+</body>
+
+</html>

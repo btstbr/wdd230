@@ -1,0 +1,52 @@
+{
+    "rentals": [
+        {
+            "vehicle": "Honda Metro Scooter",
+            "capacity": "1",
+            "reshalf": "$20",
+            "resfull": "$30",
+            "walkhalf": "$25",
+            "walkfull": "$35"
+        },
+        {
+            "vehicle": "Honda Dio Scooter",
+            "capacity": "2",
+            "reshalf": "$30",
+            "resfull": "$40",
+            "walkhalf": "$35",
+            "walkfull": "$45"
+        },
+        {
+            "vehicle": "Honda PCX150 Scooter",
+            "capacity": "2",
+            "reshalf": "$40",
+            "resfull": "$50",
+            "walkhalf": "$45",
+            "walkfull": "$55"
+        },
+        {
+            "vehicle": "Honda Pioneer ATV",
+            "capacity": "4",
+            "reshalf": "$50",
+            "resfull": "$70",
+            "walkhalf": "$60",
+            "walkfull": "$80"
+        },
+        {
+            "vehicle": "Jeep Wrangler - 4 door w/ AC",
+            "capacity": "5",
+            "reshalf": "$70",
+            "resfull": "$100",
+            "walkhalf": "$85",
+            "walkfull": "$125"
+        },
+        {
+            "vehicle": "Jeep Wrangler - 2 door",
+            "capacity": "4",
+            "reshalf": "$60",
+            "resfull": "$85",
+            "walkhalf": "$70",
+            "walkfull": "$90"
+        }
+    ]
+}

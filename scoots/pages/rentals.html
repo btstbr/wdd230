@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Scoots Rentals Rentals Page">
+    <title>Scoots Rentals</title>
+
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Galada&family=Open+Sans+Condensed:wght@300&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <h1>Scoots Rentals</h1>
+        <h2>Your Vacation Vehicle Headquarters</h2>
+
+        <div id="menu">
+            <nav>
+
+                <button id="dropdownbutton" type="button" class="small menu" onclick="toggleMenu()">&#9776;
+                    Menu</button>
+                <ul id="dropdown" class="">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="reservations.html">Reservations</a></li>
+                    <li class="active"><a href="rentals.html">Rentals</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="bg"></div>
+    </header>
+
+    <main>
+        <h3 class="ban">RENTALS</h3>
+        <h3>ATVs</h3>
+        <ul>
+            <li>Honda Pioneer 1000 - 4 person</li>
+        </ul>
+
+        <h3>Scooters</h3>
+        <ul>
+            <li>Honda Metropolitan (49cc) - 1 person</li>
+            <li>Honda Dio (110cc) - 2 person</li>
+            <li>Honda PCX150 (149cc) - 2 person</li>
+        </ul>
+        <h3>Jeeps</h3>
+        <ul>
+            <li>4-door Jeep Wrangler - manual with A/C - 5 people max</li>
+            <li>2-door Jeep Wrangler - open air - manual - 4 people max</li>
+        </ul>
+
+
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="6">Max Persons and Price Chart (includes Tax)</th>
+                </tr>
+                <tr>
+                    <td colspan="2"></td>
+                    <td colspan="2">Reservation</td>
+                    <td colspan="2">Walk-In</td>
+                </tr>
+                <tr>
+                    <td>Rental Type</td>
+                    <td>Max. Persons</td>
+                    <td>Half Day (3hrs)</td>
+                    <td>Full Day</td>
+                    <td>Half Day (3hrs)</td>
+                    <td>Full Day</td>
+                </tr>
+            </thead>
+            <tr id="row0">
+            </tr>
+            <tr id="row1">
+            </tr>
+            <tr id="row2">
+            </tr>
+            <tr id="row3">
+            </tr>
+            <tr id="row4">
+            </tr>
+            <tr id="row5">
+            </tr>
+        </table>
+
+        <h3>Important Information</h3>
+        <ul>
+            <li>A $50 security deposit is required to confirm reservations.</li>
+            <li>A valid drivers license is required in hand at time of rental.</li>
+            <li>No one under 12 years of age are allowed to ride on the scooters.</li>
+            <li>Fuel charge not included.</li>
+            <li>Unlimited mileage.</li>
+            <li>Liability insurance is free of charge.</li>
+            <li>Reservations rate requires 24 hour prior notification.</li>
+            <li>Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.</li>
+            <li>Payment via Google Pay, cash, credit card, debit card, or PayPal.</li>
+            <li>Rentals may be returned to either location.</li>
+        </ul>
+
+    </main>
+
+    <footer>
+        <p>Contact Us: 1 (800) 123-4567 | scoots@scoots.com </p>
+        <p id="datetime"></p>
+        <p>&copy; 2024 - Rafael Batista | WDD 230 | <a href="resources.html">Resources</a></p>
+        <p id="p2">Last Updated: <span id="timedisp"></span></p>
+
+    </footer>
+    <script src="../js/scoots.js"></script>
+    <script src="../js/request.js"></script>
+</body>
+
+</html>
