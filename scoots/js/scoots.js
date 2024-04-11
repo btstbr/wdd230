@@ -4,6 +4,7 @@ function toggleMenu() {
 }
 
 
+
 //Shows last updated
 function time() {
     var days = ["Sunday", "Monday", "Tuesday", "Wedneday", "Thursday", "Friday", "Saturday"]

@@ -543,20 +543,18 @@ form button {
 }
 
 #closeBanner {
-    border: 1px solid white;
     padding: 4px 8px;
     background-color: transparent;
-    color: white;
+    color: black;
     cursor: pointer;
-    margin-left: 10px;
+    margin-left: 13px;
     /* Adicionando margem entre o "x" e o final da frase */
-    font-size: 9px;
+    font-size: 12px;
     /* Reduzindo o tamanho da fonte do "x" */
 }
 
-#closeBanner:hover {
-    background-color: white;
-    color: black;
+.hide {
+    display: none;
 }
 
 .map {

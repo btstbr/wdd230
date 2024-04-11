@@ -25,15 +25,15 @@
 
         <div id="menu">
             <nav>
-
                 <button id="dropdownbutton" type="button" class="small menu" onclick="toggleMenu()">&#9776;
                     Menu</button>
-                <ul id="dropdown" class="">
+                <ul id="dropdown" class="hide"> <!-- Adicionando a classe hide para manter o menu fechado por padrão -->
                     <li class="active"><a href="index.html">Home</a></li>
                     <li><a href="pages/reservations.html">Reservations</a></li>
                     <li><a href="pages/rentals.html">Rentals</a></li>
                     <li><a href="pages/contact.html">Contact</a></li>
                 </ul>
+
             </nav>
         </div>
         <div id="bg"></div>
@@ -69,9 +69,8 @@
                 </div>
             </a>
         </section>
-        <h3 class="ban">WEATHER</h3>
+        <h3 class="ban">Weather Summary</h3>
         <div id="tile1">
-            <h4>Weather Summary</h4>
             <ul>
                 <li>Temp: <span id="current-temp1"></span> &#176;F</li>
                 <li>Humidity: <span id="humid"></span>%</li>
@@ -80,7 +79,7 @@
             </ul>
         </div>
 
-        <h4>5 Day Forecast</h4>
+        <h3 class="ban">5 Day Forecast</h3>
 
         <div class="forecast">
 
